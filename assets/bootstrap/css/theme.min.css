@@ -52,7 +52,7 @@ h2,h3{page-break-after:avoid}
 }
 .img-thumbnail,body{background-color:#fff}
 .btn,.btn-danger.active,.btn-danger:active,.btn-default.active,.btn-default:active,.btn-info.active,.btn-info:active,.btn-primary.active,.btn-primary:active,.btn-warning.active,.btn-warning:active,.btn.active,.btn:active,.dropdown-menu>.disabled>a:focus,.dropdown-menu>.disabled>a:hover,.form-control,.navbar-toggle,.open>.dropdown-toggle.btn-danger,.open>.dropdown-toggle.btn-default,.open>.dropdown-toggle.btn-info,.open>.dropdown-toggle.btn-primary,.open>.dropdown-toggle.btn-warning{background-image:none}
-@font-face{font-family:'Glyphicons Halflings';src:url(http://bootstrap-live-customizer.com/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.eot);src:url(http://bootstrap-live-customizer.com/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(http://bootstrap-live-customizer.com/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(http://bootstrap-live-customizer.com/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.woff) format('woff'),url(http://bootstrap-live-customizer.com/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(http://bootstrap-live-customizer.com/bootstrap-3.3.5/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
+@font-face{font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
 .glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .glyphicon-asterisk:before{content:"\2a"}
 .glyphicon-plus:before{content:"\2b"}
@@ -1123,18 +1123,18 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover{border-color:#722789}
 .alert-dismissable,.alert-dismissible{padding-right:45px}
 .alert-dismissable .close,.alert-dismissible .close{position:relative;top:-2px;right:-21px;color:inherit}
 .modal,.modal-backdrop{right:0;bottom:0;left:0}
-.alert-success{background-color:#35bdb2;border-color:#35bdb2;color:#35bdb2}
+.alert-success{background-color:#35bdb2;border-color:#35bdb2;color:#fff}
 .alert-success hr{border-top-color:#2fa99f}
-.alert-success .alert-link{color:#2a958c}
-.alert-info{background-color:#00abdf;border-color:#00abdf;color:#00abdf}
+.alert-success .alert-link{color:#e6e6e6}
+.alert-info{background-color:#00abdf;border-color:#00abdf;color:#fff}
 .alert-info hr{border-top-color:#0097c6}
-.alert-info .alert-link{color:#0084ac}
-.alert-warning{background-color:#fbb318;border-color:#fbb318;color:#fbb318}
+.alert-info .alert-link{color:#e6e6e6}
+.alert-warning{background-color:#fbb318;border-color:#fbb318;color:#fff}
 .alert-warning hr{border-top-color:#f5a904}
-.alert-warning .alert-link{color:#dc9804}
-.alert-danger{background-color:#ed1556;border-color:#ed1556;color:#ed1556}
+.alert-warning .alert-link{color:#e6e6e6}
+.alert-danger{background-color:#ed1556;border-color:#ed1556;color:#fff}
 .alert-danger hr{border-top-color:#d8114d}
-.alert-danger .alert-link{color:#c00f44}
+.alert-danger .alert-link{color:#e6e6e6}
 @-webkit-keyframes progress-bar-stripes{from{background-position:40px 0}
 to{background-position:0 0}
 }
@@ -1240,24 +1240,28 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:focus,a.list-gro
 .panel-default>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#ddd}
 .panel-primary{border-color:#722789}
 .panel-primary>.panel-heading{color:#fff;background-color:#722789;border-color:#722789}
-.panel-success,.panel-success>.panel-heading{border-color:#35bdb2}
 .panel-primary>.panel-heading+.panel-collapse>.panel-body{border-top-color:#722789}
 .panel-primary>.panel-heading .badge{color:#722789;background-color:#fff}
-.panel-success>.panel-heading,.panel-success>.panel-heading .badge{color:#35bdb2;background-color:#35bdb2}
 .panel-primary>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#722789}
-.panel-info,.panel-info>.panel-heading{border-color:#00abdf}
+.panel-success{border-color:#35bdb2}
+.panel-success>.panel-heading{color:#fff;background-color:#35bdb2;border-color:#35bdb2}
 .panel-success>.panel-heading+.panel-collapse>.panel-body{border-top-color:#35bdb2}
-.panel-info>.panel-heading,.panel-info>.panel-heading .badge{color:#00abdf;background-color:#00abdf}
+.panel-success>.panel-heading .badge{color:#35bdb2;background-color:#fff}
 .panel-success>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#35bdb2}
-.panel-warning,.panel-warning>.panel-heading{border-color:#fbb318}
+.panel-info{border-color:#00abdf}
+.panel-info>.panel-heading{color:#fff;background-color:#00abdf;border-color:#00abdf}
 .panel-info>.panel-heading+.panel-collapse>.panel-body{border-top-color:#00abdf}
-.panel-warning>.panel-heading,.panel-warning>.panel-heading .badge{color:#fbb318;background-color:#fbb318}
+.panel-info>.panel-heading .badge{color:#00abdf;background-color:#fff}
 .panel-info>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#00abdf}
-.panel-danger,.panel-danger>.panel-heading{border-color:#ed1556}
+.panel-warning{border-color:#fbb318}
+.panel-warning>.panel-heading{color:#fff;background-color:#fbb318;border-color:#fbb318}
 .panel-warning>.panel-heading+.panel-collapse>.panel-body{border-top-color:#fbb318}
-.panel-danger>.panel-heading,.panel-danger>.panel-heading .badge{color:#ed1556;background-color:#ed1556}
+.panel-warning>.panel-heading .badge{color:#fbb318;background-color:#fff}
 .panel-warning>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#fbb318}
+.panel-danger{border-color:#ed1556}
+.panel-danger>.panel-heading{color:#fff;background-color:#ed1556;border-color:#ed1556}
 .panel-danger>.panel-heading+.panel-collapse>.panel-body{border-top-color:#ed1556}
+.panel-danger>.panel-heading .badge{color:#ed1556;background-color:#fff}
 .panel-danger>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#ed1556}
 .embed-responsive{position:relative;display:block;height:0;padding:0}
 .embed-responsive .embed-responsive-item,.embed-responsive embed,.embed-responsive iframe,.embed-responsive object,.embed-responsive video{position:absolute;top:0;left:0;bottom:0;height:100%;width:100%;border:0}
