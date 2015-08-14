@@ -68,15 +68,12 @@ var read = function(term){
 	u.voiceURI = 'Google Español';
 	u.volume = 1;
 	speechSynthesis.speak(u);
-	u.onend = function(){
-		$("#inputText").append(" &nbsp; ");
-	}
 }
 
 read(texthelp);
 
 var write = function(term){
-	$("#inputText").append(term);
+	$("#inputText").append(term + "&nbsp;");
 }
 
 $("#speek").on( "click", function(){
