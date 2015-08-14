@@ -91,8 +91,8 @@ $("#reset").on( "click", function(){
 });
 
 var commands = {
-	'escribir *search': write,
-	'*search': notiwrite
+	// 'escribir *search': write,
+	'*search': write
 };
 
 annyang.debug();
