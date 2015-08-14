@@ -47,7 +47,7 @@
 <script>
 $(function() {
 
-var texthelp = "Para iniciar a escribir, solo diga escribir y a continuación el texto que desea digitar";
+var texthelp = "Para iniciar a escribir, solo diga escribir y a continuación el texto que desea digitar, Haga click en reset, luego inicie a hablar al micrófono.";
 
 $("#inputText").typed({
     strings: [texthelp],
@@ -68,16 +68,15 @@ var read = function(term){
 	u.voiceURI = 'Google Español';
 	u.volume = 1;
 	speechSynthesis.speak(u);
+	u.onend = function(){
+		$("#inputText").append(" &nbsp; ");
+	}
 }
 
 read(texthelp);
 
 var write = function(term){
 	$("#inputText").append(term);
-}
-
-var spaciotab = function(){
-	$("#inputText").append(" ");
 }
 
 $("#speek").on( "click", function(){
@@ -89,7 +88,6 @@ $("#reset").on( "click", function(){
 });
 
 var commands = {
-	'espacio (there)': spaciotab,
 	'*search': write
 };
 
