@@ -68,9 +68,6 @@ var read = function(term){
 	u.voiceURI = 'Google Español';
 	u.volume = 1;
 	speechSynthesis.speak(u);
-	u.onend = function(){
-		$("#inputText").html(" ").focus();
-	}
 }
 
 read(texthelp);
@@ -78,8 +75,9 @@ read(texthelp);
 var write = function(term){
 	$("#inputText").append(term);
 }
-var notiwrite = function(term){
-	read(texthelp);
+
+var spaciotab = function(){
+	$("#inputText").append(" ");
 }
 
 $("#speek").on( "click", function(){
@@ -91,7 +89,7 @@ $("#reset").on( "click", function(){
 });
 
 var commands = {
-	// 'escribir *search': write,
+	'espacio (there)': spaciotab,
 	'*search': write
 };
 
